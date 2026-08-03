@@ -70,11 +70,7 @@ export default function Home() {
           </a>
         </div>
       </footer>
-      <img
-        src="/rick.png"
-        alt="Pickle Rick background"
-        className="fixed bottom-10 right-10 -z-10 opacity-15 pointer-events-none w-48 sm:w-64 animate-float"
-      />
+      <div className="fixed inset-0 -z-10 pointer-events-none opacity-15 pickle-tile-pattern" />
     </div>
   );
 }

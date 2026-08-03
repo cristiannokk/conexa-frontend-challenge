@@ -58,6 +58,13 @@ button:disabled {
   background: rgba(57, 255, 20, 0.6);
 }
 
+.pickle-tile-pattern {
+  background-image: url('/rick.png'), url('/rick-02.png');
+  background-repeat: repeat, repeat;
+  background-size: 130px 130px, 130px 130px;
+  background-position: 0 0, 65px 65px;
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0) rotate(-3deg);
