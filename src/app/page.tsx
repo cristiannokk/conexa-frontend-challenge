@@ -70,7 +70,44 @@ export default function Home() {
           </a>
         </div>
       </footer>
-      <div className="fixed inset-0 -z-10 pointer-events-none opacity-15 pickle-tile-pattern" />
+      <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden select-none">
+        <img
+          src="/rick.png"
+          alt=""
+          className="fixed top-12 left-6 w-32 md:w-44 opacity-20 pointer-events-none animate-float-async"
+          style={{ animationDuration: '17s', animationDelay: '0s' }}
+        />
+        <img
+          src="/rick-02.png"
+          alt=""
+          className="fixed top-24 right-10 w-36 md:w-48 opacity-20 pointer-events-none animate-float-async"
+          style={{ animationDuration: '23s', animationDelay: '3s' }}
+        />
+        <img
+          src="/rick-02.png"
+          alt=""
+          className="fixed bottom-20 left-12 w-36 md:w-44 opacity-20 pointer-events-none animate-float-async"
+          style={{ animationDuration: '19s', animationDelay: '6s' }}
+        />
+        <img
+          src="/rick.png"
+          alt=""
+          className="fixed bottom-10 right-14 w-40 md:w-52 opacity-20 pointer-events-none animate-float-async"
+          style={{ animationDuration: '25s', animationDelay: '1.5s' }}
+        />
+        <img
+          src="/rick.png"
+          alt=""
+          className="fixed top-1/2 left-2 -translate-y-1/2 w-28 md:w-36 opacity-15 pointer-events-none animate-float-async"
+          style={{ animationDuration: '21s', animationDelay: '4.5s' }}
+        />
+        <img
+          src="/rick-02.png"
+          alt=""
+          className="fixed top-1/3 right-4 w-28 md:w-36 opacity-15 pointer-events-none animate-float-async"
+          style={{ animationDuration: '24s', animationDelay: '2.5s' }}
+        />
+      </div>
     </div>
   );
 }
