@@ -15,7 +15,7 @@ export const MortyEmptyState = () => {
         "Aw, geez, Rick..."
       </p>
       <p className="text-xs text-slate-300 mt-1.5 leading-relaxed max-w-[220px]">
-        Estos personajes no comparten ningún episodio en esta dimensión.
+        These characters don't share any episodes in this dimension.
       </p>
     </div>
   );
