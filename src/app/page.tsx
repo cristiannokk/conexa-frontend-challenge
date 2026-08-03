@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, ArrowLeftRight, ExternalLink, User, Menu } from 'lucide-react';
+import { Sparkles, ArrowLeftRight } from 'lucide-react';
 import CharacterPicker from '@/components/features/CharacterPicker';
 import EpisodeBoard from '@/components/features/EpisodeBoard';
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <header className="bg-[#000d27]/90 backdrop-blur-md border-b border-slate-800/80 sticky top-0 z-50 w-full">
-        <div className="flex justify-between items-center w-full px-4 md:px-8 py-3 max-w-[1440px] mx-auto">
+        <div className="flex items-center justify-center w-full px-4 md:px-8 py-3.5 max-w-[1440px] mx-auto">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg bg-conexa-neon/10 border border-conexa-neon/30 text-conexa-neon shadow-[0_0_10px_rgba(57,255,20,0.3)]">
               <Sparkles className="w-5 h-5" />
@@ -16,30 +16,6 @@ export default function Home() {
             <span className="text-2xl font-black tracking-tight text-conexa-neon">
               Conexa
             </span>
-          </div>
-
-          <nav className="hidden md:flex gap-6 text-sm font-semibold text-slate-400">
-            <a href="#" className="hover:text-conexa-neon transition-colors cursor-pointer">
-              Portal
-            </a>
-            <a href="#" className="hover:text-conexa-neon transition-colors cursor-pointer">
-              Multiverse
-            </a>
-            <a
-              href="#"
-              className="text-conexa-neon border-b-2 border-conexa-neon pb-0.5 cursor-pointer"
-            >
-              Compare
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-2">
-            <button className="text-slate-400 hover:text-conexa-neon p-2 rounded-full hover:bg-slate-800/50 transition-colors cursor-pointer">
-              <User className="w-5 h-5" />
-            </button>
-            <button className="md:hidden text-slate-400 hover:text-conexa-neon p-2 rounded-full hover:bg-slate-800/50 transition-colors cursor-pointer">
-              <Menu className="w-5 h-5" />
-            </button>
           </div>
         </div>
       </header>
@@ -79,31 +55,24 @@ export default function Home() {
       </main>
 
       <footer className="bg-[#000d27] border-t border-slate-800/80 py-6 mt-12 w-full text-xs text-slate-400">
-        <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 max-w-[1440px] mx-auto gap-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center px-4 md:px-8 max-w-[1440px] mx-auto gap-4">
           <div className="flex items-center gap-2">
             <span className="font-bold text-conexa-neon text-sm">Conexa</span>
             <span>|</span>
-            <span>Frontend Developer Challenge</span>
+            <span>Developed for Conexa Frontend Challenge</span>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <span>Created for Challenge</span>
-            <a
-              href="#"
-              className="text-conexa-neon hover:underline flex items-center gap-1"
-            >
-              Deploy Link <ExternalLink className="w-3 h-3" />
-            </a>
-          </div>
-
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Interdimensional Terms
-            </a>
-          </div>
+          <a
+            href="https://github.com/cristiannokk/conexa-frontend-challenge"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-slate-300 hover:text-conexa-neon transition-colors font-medium cursor-pointer"
+          >
+            <svg className="w-4 h-4 text-conexa-neon fill-current" viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub Repository</span>
+          </a>
         </div>
       </footer>
     </div>
