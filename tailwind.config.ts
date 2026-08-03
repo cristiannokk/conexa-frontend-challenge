@@ -18,7 +18,16 @@ const config: Config = {
       },
       backgroundImage: {
         'portal-gradient': 'linear-gradient(135deg, rgba(15,23,42,1) 0%, rgba(30,41,59,1) 100%)',
-      }
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+          '50%': { transform: 'translateY(-20px) rotate(5deg)' },
+        },
+      },
+      animation: {
+        float: 'float 12s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
