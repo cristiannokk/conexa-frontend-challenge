@@ -2,6 +2,8 @@
 
 Dashboard interactivo desarrollado para analizar intersecciones de líneas temporales y coincidencias de episodios entre personajes del multiverso de Rick & Morty.
 
+🌐 **Demo en Vivo (Vercel)**: [https://conexa-frontend-challenge.vercel.app/](https://conexa-frontend-challenge.vercel.app/)
+
 ## 🛠️ Tecnologías Utilizadas
 
 - **Core Framework**: [Next.js 16](https://nextjs.org/) (App Router & Turbopack)
