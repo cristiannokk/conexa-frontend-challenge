@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, ArrowLeftRight } from 'lucide-react';
+import { ArrowLeftRight } from 'lucide-react';
 import CharacterPicker from '@/components/features/CharacterPicker';
 import EpisodeBoard from '@/components/features/EpisodeBoard';
 
@@ -9,14 +9,9 @@ export default function Home() {
     <div className="min-h-screen flex flex-col font-sans">
       <header className="bg-[#000d27]/90 backdrop-blur-md border-b border-slate-800/80 sticky top-0 z-50 w-full">
         <div className="flex items-center justify-center w-full px-4 md:px-8 py-3.5 max-w-[1440px] mx-auto">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-conexa-neon/10 border border-conexa-neon/30 text-conexa-neon shadow-[0_0_10px_rgba(57,255,20,0.3)]">
-              <Sparkles className="w-5 h-5" />
-            </div>
-            <span className="text-2xl font-black tracking-tight text-conexa-neon">
-              Conexa
-            </span>
-          </div>
+          <span className="text-2xl font-black tracking-tight text-conexa-neon">
+            Conexa
+          </span>
         </div>
       </header>
 
